@@ -19,7 +19,7 @@
 
 <br>
 
-## Caculator
+## Calculator
 
 1. TableLayout, ConstraintLayout, LayoutInflater
 2. Thread, RunOnUIThread
