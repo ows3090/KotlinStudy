@@ -25,3 +25,12 @@
 2. Thread, RunOnUIThread
 3. Room
 4. Kotlin Extension Function
+
+<br>
+
+## Electronic frame
+
+1. Android Permission
+2. View Animation
+3. Acitivty Lifecycle
+4. Content Provider ( Storage Access Framework )
