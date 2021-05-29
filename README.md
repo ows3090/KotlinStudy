@@ -18,3 +18,10 @@
 5. AlertDialog
 
 <br>
+
+## Caculator
+
+1. TableLayout, ConstraintLayout, LayoutInflater
+2. Thread, RunOnUIThread
+3. Room
+4. Kotlin Extension Function
