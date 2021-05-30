@@ -34,3 +34,11 @@
 2. View Animation
 3. Acitivty Lifecycle
 4. Content Provider ( Storage Access Framework )
+
+<br>
+
+## Timer
+
+1. ConstraintLayout
+2. CountDownTimer
+3. SoundPool
