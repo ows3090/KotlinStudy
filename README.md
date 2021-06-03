@@ -42,3 +42,11 @@
 1. ConstraintLayout
 2. CountDownTimer
 3. SoundPool
+
+<br>
+
+## Recorder
+
+1. Request runtime permissions
+2. CustomView
+3. MediaRecorder
