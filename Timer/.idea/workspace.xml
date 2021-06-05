@@ -7,6 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4a5386b-bbf8-4d1e-a265-6159dfdcac9b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Recorder/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Recorder/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recorder/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Recorder/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recorder/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Recorder/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recorder/app/src/main/java/ows/kotlinstudy/recorder/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Recorder/app/src/main/java/ows/kotlinstudy/recorder/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recorder/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Recorder/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +64,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Timer.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
