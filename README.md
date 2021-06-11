@@ -39,6 +39,7 @@
 2. Thread, RunOnUIThread
 	- RunOnUIThread : Runs the specified action on the UI Thread.
 3. Room
+	- Dto, Database, Entity, Query
 4. Kotlin Extension Function
 
 <br>
@@ -61,15 +62,25 @@
 
 1. ConstraintLayout
 2. CountDownTimer
+	- Schedule a countdown until a time in the future.
 3. SoundPool
+	- The SoundPool class manages and plays audio resources for applications.
 
 <br>
 
 ## Recorder
 
 1. Request runtime permissions
+	- Runtime permissions also known as dangerous permissions, give your app additional access to restricted data,
+	and they allow your app to perform restricted actions.
+
 2. CustomView
+	- All of the view classes defined in the Androdi framework extend View
+	- To allow Android Studio to interact with your view, you must provide a constructor that takes a Context and
+	and an AttributesSet object as parameters. 
 3. MediaRecorder
+	- Used to recore audio and video.
+	- MediaRecorder state diagram
 
 <br>
 
@@ -84,7 +95,13 @@
 ## Push Notification
 
 1. Firebase cloud messaging
-2. Notification
+	- Token : Firebase creates a corresponding ID token that uniquely identifies them and grants them access to serveral resources.
+	- To receive messages, use a service that extends FirebaseMessagingService
+	- Notification Message : Only background state
+	- Data Message : All state, Client App 
+2. Notification 
+	- Notification Channel : SDK 26, Oreo over
+	- Normal, Expandable, Custom
 
 <br>
 

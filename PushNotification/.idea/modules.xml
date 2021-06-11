@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/PushNotification.iml" filepath="$PROJECT_DIR$/.idea/modules/PushNotification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PushNotification.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PushNotification.app.iml" />
     </modules>
   </component>
 </project>
