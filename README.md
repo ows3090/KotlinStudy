@@ -114,3 +114,19 @@
 	- ViewPager vs ViewPager2 : Vertical orientation support, RTL support, Modifiable Use notifyDatasetChanged, DiffUtil (like recyclerview)
 
 <br>
+
+## Alarm 
+
+1. AlarmManager
+2. Notification
+3. Broadcast receiver
+4. Background : Thread, Handler, Coroutines
+5. WorkManger, AlarmManager
+
+
+
+
+
+
+
+
