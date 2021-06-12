@@ -105,4 +105,9 @@
 
 <br>
 
+## Today wise saying
 
+1. Firebase Remote Config
+2. ViewPager2
+
+<br>
