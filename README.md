@@ -125,4 +125,14 @@
 	- Android apps can send or receive broadcast messages from the Android system and other Android apps, 
 	smiliar to the publish-subscribe design pattern.
 
+<br>
+
+## Book Review
+
+1. RecylcerView
+2. View Binding
+3. Retrofit
+4. Glide
+5. Android Room
+
 
