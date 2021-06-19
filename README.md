@@ -130,7 +130,12 @@
 ## Book Review
 
 1. RecylcerView
+	- Adapter : A subclass of RecyclerView.Adapter responsible for providing views that represent items in a data set.
+	- DiffUtil : DiffUtil can calculate the difference between versions of the list.
+	- LayoutManager : The items in your RecyclerView are arranged by a LayoutManager class.
+	- ViwHolder : The ViewHolder is a wrapper around a View that contains the layout for an individual items in the list.
 2. View Binding
+	- ViewBinding is a feature that allows you to more easily write code that interacts with view.
 3. Retrofit
 4. Glide
 5. Android Room
