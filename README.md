@@ -140,4 +140,12 @@
 4. Glide
 5. Android Room
 
+<br>
 
+## Tinder
+
+1. Firebase Authenetication, Email Login, Facebook Login
+2. Firebase Realtime Database
+3. yuyakaido/CardStackView
+
+<br>
