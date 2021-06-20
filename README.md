@@ -1,4 +1,4 @@
-# Kotlin study
+## Kotlin study
 
 ## Lotto App
 
@@ -152,5 +152,17 @@
 	- addListenerForSingleValueEvent
 	- addChildEventListner
 3. yuyakaido/CardStackView
+
+<br>
+
+## Used Deal
+
+1. RecyclerView
+2. View Binding
+3. Fragment
+4. BottomNavigationView
+5. Firebase Storage
+6. Firebase Realtime Database
+7. Firebase Authentication
 
 <br>
