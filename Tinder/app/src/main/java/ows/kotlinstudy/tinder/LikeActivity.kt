@@ -103,6 +103,7 @@ class LikeActivity : AppCompatActivity(), CardStackListener {
             }
 
             override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {
+                Log.d("msg","onChildChanged")
                 cardItems.find { cardItem ->
                     cardItem.userId == snapshot.key
                 }?.let {
