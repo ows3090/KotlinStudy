@@ -5,6 +5,7 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
@@ -81,6 +82,7 @@ class ArticleAddActivity : AppCompatActivity() {
 
     private fun uploadPhoto(uri: Uri, successHandler: (String) -> Unit, errorHandler: () -> Unit){
         val fileName = "${System.currentTimeMillis()}.png"
+        Log.d("msg","first uri : $uri")
         storage.reference.child("article/photo").child(fileName)
             .putFile(uri)
             .addOnCompleteListener {
@@ -88,6 +90,7 @@ class ArticleAddActivity : AppCompatActivity() {
                     storage.reference.child("article/photo").child(fileName)
                         .downloadUrl
                         .addOnSuccessListener {
+
                             successHandler(it.toString())
                         }.addOnFailureListener {
                             errorHandler()
@@ -100,6 +103,7 @@ class ArticleAddActivity : AppCompatActivity() {
     }
 
     private fun uploadArticle(sellerId: String, title: String, price: String, imageUri: String){
+        Log.d("msg","second uri : $imageUri")
         val model = ArticleModel(sellerId, title,System.currentTimeMillis(), price, imageUri)
         articleDB.push().setValue(model)
         hideProgress()
