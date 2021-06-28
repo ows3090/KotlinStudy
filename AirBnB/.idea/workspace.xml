@@ -1,24 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="22ce485b-1106-4a60-ada4-038fc776d534" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../UsedDeal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UsedDeal/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="faef1778-ebc4-4c78-a4dd-7a2b43869f66" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Nexus_5X_API_27]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="resourceFile" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Class" />
+        <option value="layoutResourceFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1uUj64JTE0tAKT1I48IAZusx3Gn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1uUjeAQO6ZAybboHNqivkOpi7fg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,10 +56,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="android.project.structure.last.selected" value="SDK Location" />
-    <property name="android.project.structure.proportion" value="0.15" />
-    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android-custom-view/Users/owonseog/.gradle/caches/modules-2/files-2.1/androidx.cardview/cardview/1.0.0/c9f3ce7ca74ad2c978230f4094ba6804c5166f9c/cardview-1.0.0-sources.jar!/androidx/cardview/widget/CardView.java_SELECTED" value="CardView" />
+    <property name="multi-representation-preview/Users/owonseog/.gradle/caches/modules-2/files-2.1/androidx.cardview/cardview/1.0.0/c9f3ce7ca74ad2c978230f4094ba6804c5166f9c/cardview-1.0.0-sources.jar!/androidx/cardview/widget/CardView.java_selected" value="Custom views" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="ows.kotlinstudy.airbnb" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -39,7 +74,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="AirBnB.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -102,12 +137,46 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="22ce485b-1106-4a60-ada4-038fc776d534" name="Default Changelist" comment="" />
-      <created>1624726882433</created>
+      <changelist id="faef1778-ebc4-4c78-a4dd-7a2b43869f66" name="Default Changelist" comment="" />
+      <created>1624727154136</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1624726882433</updated>
+      <updated>1624727154136</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1181" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1624897833733">
+      <screen x="-1920" y="-157" width="1920" height="1057" />
+    </state>
+    <state x="-1181" y="94" key="#com.intellij.ide.util.MemberChooser/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1624897833733" />
+    <state x="-1372" y="133" key="AndroidCreateResourceFileDialog" timestamp="1624895419996">
+      <screen x="-1920" y="-157" width="1920" height="1057" />
+    </state>
+    <state x="-1372" y="133" key="AndroidCreateResourceFileDialog/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1624895419995" />
+    <state width="1878" height="248" key="GridCell.Tab.0.bottom" timestamp="1624898920903">
+      <screen x="-1920" y="-157" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.bottom/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1624898920903" />
+    <state width="1878" height="248" key="GridCell.Tab.0.center" timestamp="1624898920902">
+      <screen x="-1920" y="-157" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.center/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1624898920902" />
+    <state width="1878" height="248" key="GridCell.Tab.0.left" timestamp="1624898920901">
+      <screen x="-1920" y="-157" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.left/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1624898920901" />
+    <state width="1878" height="248" key="GridCell.Tab.0.right" timestamp="1624898920902">
+      <screen x="-1920" y="-157" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.right/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1624898920902" />
+    <state x="-1459" y="10" key="SettingsEditor" timestamp="1624897659443">
+      <screen x="-1920" y="-157" width="1920" height="1057" />
+    </state>
+    <state x="-1459" y="10" key="SettingsEditor/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1624897659443" />
+    <state x="-1295" y="78" width="670" height="676" key="search.everywhere.popup" timestamp="1624893897783">
+      <screen x="-1920" y="-157" width="1920" height="1057" />
+    </state>
+    <state x="-1295" y="78" width="670" height="676" key="search.everywhere.popup/-1920.-157.1920.1057/0.23.1440.877@-1920.-157.1920.1057" timestamp="1624893897783" />
   </component>
 </project>
