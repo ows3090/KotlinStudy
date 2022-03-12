@@ -7,11 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4a5386b-bbf8-4d1e-a265-6159dfdcac9b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Recorder/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Recorder/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Recorder/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Recorder/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Recorder/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Recorder/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Recorder/app/src/main/java/ows/kotlinstudy/recorder/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Recorder/app/src/main/java/ows/kotlinstudy/recorder/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Recorder/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Recorder/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AirBnB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AirBnB/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Caculator/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/app/src/main/java/ows/kotlinstudy/caculator/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Caculator/app/src/main/java/ows/kotlinstudy/caculator/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/app/src/main/java/ows/kotlinstudy/caculator/model/History.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Caculator/app/src/main/java/ows/kotlinstudy/caculator/model/History.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ElectronicFrame/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ElectronicFrame/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ElectronicFrame/app/src/main/java/ows/kotlinstudy/electronicframe/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ElectronicFrame/app/src/main/java/ows/kotlinstudy/electronicframe/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LottoApp/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LottoApp/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LottoApp/app/src/main/java/ows/kotlinstudy/lottoapp/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../LottoApp/app/src/main/java/ows/kotlinstudy/lottoapp/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +58,7 @@
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunManager">

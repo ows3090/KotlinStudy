@@ -3,6 +3,7 @@ package ows.kotlinstudy.lottoapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.NumberPicker
 import android.widget.TextView
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
     private var didRun = false
 
-    private val pickNumberSet = hashSetOf<Int>()
+    private val pickNumberSet = mutableSetOf<Int>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

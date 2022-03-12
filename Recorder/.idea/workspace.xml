@@ -10,13 +10,28 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83dc7403-ee2e-448d-9174-9ab391947c07" name="Default Changelist" comment="" />
+    <list default="true" id="83dc7403-ee2e-448d-9174-9ab391947c07" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../AirBnB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AirBnB/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Caculator/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/app/src/main/java/ows/kotlinstudy/caculator/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Caculator/app/src/main/java/ows/kotlinstudy/caculator/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caculator/app/src/main/java/ows/kotlinstudy/caculator/model/History.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Caculator/app/src/main/java/ows/kotlinstudy/caculator/model/History.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ElectronicFrame/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ElectronicFrame/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ElectronicFrame/app/src/main/java/ows/kotlinstudy/electronicframe/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ElectronicFrame/app/src/main/java/ows/kotlinstudy/electronicframe/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LottoApp/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LottoApp/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LottoApp/app/src/main/java/ows/kotlinstudy/lottoapp/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../LottoApp/app/src/main/java/ows/kotlinstudy/lottoapp/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/recorder/CountUpView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/recorder/CountUpView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Timer/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../Timer/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Timer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Timer/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[192.168.35.130:5555]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -72,6 +87,7 @@
     <property name="android-custom-view/Users/owonseog/KotlinStudy/Recorder/app/src/main/java/ows/kotlinstudy/recorder/RecordButton.kt_SELECTED" value="RecordButton" />
     <property name="android-custom-view/Users/owonseog/KotlinStudy/Recorder/app/src/main/java/ows/kotlinstudy/recorder/SoundVisualizerView.kt_SELECTED" value="SoundVisualizerView" />
     <property name="android-custom-view/Users/owonseog/Library/Android/sdk/sources/android-29/android/view/View.java_SELECTED" value="View" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="multi-representation-preview/Users/owonseog/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.3.0/45a346a05e7ff27a01c59452379c5939cbb53c03/appcompat-1.3.0-sources.jar!/androidx/appcompat/widget/AppCompatImageButton.java_selected" value="Custom views" />
     <property name="multi-representation-preview/Users/owonseog/KotlinStudy/Recorder/app/src/main/java/ows/kotlinstudy/recorder/CountUpView.kt_selected" value="Custom views" />
     <property name="multi-representation-preview/Users/owonseog/KotlinStudy/Recorder/app/src/main/java/ows/kotlinstudy/recorder/RecordButton.kt_selected" value="Custom views" />

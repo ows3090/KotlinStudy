@@ -3,10 +3,7 @@
 ## Lotto App
 
 1. ConstraintLayout
-	- match_parent vs match_constraint(0dp)
-	- Chain Style
 2. NumberPicker
-	- A widget that enables the user to select a number from a predefined range.
 3. TextView
 4. Button
 

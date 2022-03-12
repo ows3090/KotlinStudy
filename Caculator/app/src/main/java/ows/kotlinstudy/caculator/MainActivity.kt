@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
@@ -179,7 +180,7 @@ class MainActivity : AppCompatActivity() {
         // TODO DB 저장, DB에 저장하는 과정은 MainThread가 아닌 일반 Thread에서 진행
 
         Thread(Runnable {
-            db.historyDao().insertHistory(History(null,expressionText, resultText))
+            db.historyDao().insertHistory(History(expressionText, resultText))
         }).start()
 
         resultTextView.text = ""
@@ -196,6 +197,7 @@ class MainActivity : AppCompatActivity() {
         Thread(Runnable {
             db.historyDao().getAll().reversed().forEach {
                 runOnUiThread {
+                    Log.d("msg", "${it.uid}")
                     val historyView = LayoutInflater.from(this).inflate(R.layout.history_row, null, false)
                     historyView.findViewById<TextView>(R.id.expressionTextView).text = it.expression
                     historyView.findViewById<TextView>(R.id.resultTextView).text = "= ${it.result}"
