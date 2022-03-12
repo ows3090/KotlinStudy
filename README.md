@@ -13,19 +13,10 @@
 
 1. ConstraintLayout
 2. Handler
-	- An Handler allows you to send and process Message and Runnable objects associated with a thread's MessageQueue.
-	- to schedule messages and runnables to be executed at some point in the future.
-	- to enqueue an action to be performed on a a different thread than your own.
 3. SharedPreference
-	- Interface for accessing and modifying preference data returned by Context.getSharedPreference.
-	- preference must go though an Editor object to ensure the preference values remain in a consistent state.
 4. Theme
 5. AlertDialog
 6. Intent
-	- An intent in an abstract description of an operation to be performed.
-	- startActivity to launch an Activity.
-	- broadcastIntent to sent it to any interested BroadcastReceiver.
-	- Context.startService, Context.bindService to communicate with a background service.
 
 <br>
 
