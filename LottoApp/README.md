@@ -15,7 +15,10 @@ start, end, Top, Bottom 제약조건과 함께 match_constraint(0dp) 를 사용
 ### Shape Drawable
 Shape Drawable은 다양한 모양과 색상, 그라데이션을 설정할 수 있는 XML 파일로, 
 레이아웃 또는 뷰의 배경화면에 설정할 수 있는 복잡한 모양을 생성할 수 있음
-ex) shape, border, gradient, button background
+- shape
+- border
+- gradient
+- button background
 <br> 
 참고(https://developer.android.com/guide/topics/resources/drawable-resource?hl=ko#Shape)
 
