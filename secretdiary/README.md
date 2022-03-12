@@ -1,6 +1,3 @@
-### ConstraintLayout
-<br><br>
-
 ### Handler
 스레드간에 메세지나 Runnable 객체를 통신을 담당하는 역할로, Looper로부터 처리되어야 할 Message를
 받아서 처리하는 역할과 MessageQueue에 Message를 전달하는 역할을 함.
