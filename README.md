@@ -23,11 +23,8 @@
 ## Calculator
 
 1. TableLayout, ConstraintLayout, LayoutInflater
-	- LayoutInflator : Instantiates a layout XML files into its corresponding View objects.
 2. Thread, RunOnUIThread
-	- RunOnUIThread : Runs the specified action on the UI Thread.
 3. Room
-	- Dto, Database, Entity, Query
 4. Kotlin Extension Function
 
 <br>
