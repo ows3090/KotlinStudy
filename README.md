@@ -42,9 +42,8 @@
 
 1. ConstraintLayout
 2. CountDownTimer
-	- Schedule a countdown until a time in the future.
 3. SoundPool
-	- The SoundPool class manages and plays audio resources for applications.
+4. SeekBar
 
 <br>
 

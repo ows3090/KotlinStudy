@@ -68,10 +68,18 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
+                /**
+                 * SeekBar Tracking을 시작할 때
+                 */
                 override fun onStartTrackingTouch(seekBar: SeekBar?) {
                     stopCountDown()
                 }
 
+                /**
+                 * SeekBar Tracking때 멈출 때
+                 * 1. progress == 0 : stop
+                 * 2. progress > 0 : start
+                 */
                 override fun onStopTrackingTouch(seekBar: SeekBar?) {
                     seekBar ?:return
                     if(seekBar.progress == 0){
