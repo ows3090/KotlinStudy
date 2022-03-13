@@ -32,14 +32,9 @@
 ## Electronic frame
 
 1. Android Permission
-	- Workflow for using permissions
-	- rationale
 2. View Animation
-	- You can use the view animation system to perform tweened animation on Views.
-	- Tween animation calculates the animation with information such as the start point, end point, size, rotation.
 3. Acitivty Lifecycle
 4. Content Provider ( Storage Access Framework )
-	- The SAF makes it simple for users to browse and open documents, images, and ohter files.
 
 <br>
 

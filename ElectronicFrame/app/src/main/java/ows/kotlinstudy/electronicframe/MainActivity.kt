@@ -8,10 +8,12 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
@@ -147,7 +149,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun navigatePhotos() {
         // SAF(Storage Access Framework) 기능 사용
-        val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
+        val intent = Intent(Intent.ACTION_OPEN_DOCUMENT_TREE)
         intent.type = "image/*"
         startActivityForResult(intent, 2000)
 
