@@ -1,9 +1,10 @@
 ## CustomView
-XML에서 View 를 inflation 할 때 호출되는 생성자는 View(Context, AttributeSet)으로 
-XML 파일에서 지정된 속성을 제공하여 XML 파일에서 View를 구성할 때 호출된다.
+XML에서 View 를 inflation 할 때 호출되는 생성자는 View(Context, AttributeSet)으로 XML 파일에서 지정된 속성을 제공하여 XML 파일에서 View를 구성할 때 호출된다.
+<br>
+
 <img width="788" alt="image" src="https://user-images.githubusercontent.com/34837583/158223243-9fd0a3c9-4aaf-426b-9775-c6105281d09d.png">
 
-View 계층 구조를 모두 전위순회하여 제약 조건을 정의하고 화면에 표시한다.
+View 계층 구조를 모두 전위순회하여 제약 조건을 정의하고 화면에 표시한다.<br>
 Animate -> Measure -> Layout -> Draw 단계로 수행
 
 - onMeasure() : View의 크기를 확인하기 위해 호출, ViewGroup의 경우 Child view에 대한 측정하고, 그 결과로 자신의 사이즈 결정
