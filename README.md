@@ -50,16 +50,10 @@
 ## Recorder
 
 1. Request runtime permissions
-	- Runtime permissions also known as dangerous permissions, give your app additional access to restricted data,
-	and they allow your app to perform restricted actions.
-
 2. CustomView
-	- All of the view classes defined in the Androdi framework extend View
-	- To allow Android Studio to interact with your view, you must provide a constructor that takes a Context and
-	and an AttributesSet object as parameters. 
 3. MediaRecorder
-	- Used to recore audio and video.
-	- MediaRecorder state diagram
+4. MediaPlayer
+5. View Lifecycle
 
 <br>
 

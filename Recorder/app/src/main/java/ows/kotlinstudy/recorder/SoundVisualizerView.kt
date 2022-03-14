@@ -4,6 +4,7 @@ import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.util.AttributeSet
+import android.util.Log
 import android.view.View
 
 class SoundVisualizerView(
@@ -13,20 +14,31 @@ class SoundVisualizerView(
 
     var onRequestCurrentAmplitude: (() -> Int)? = null
 
+    /**
+     * Draw 하기위한 Paint 도구
+     * Canvas : 도화지, Paint : 붓
+     * @color : 색깔
+     * @strokeWidth : 굵기
+     * @strokeCap : 선의 끝 부분 마감처리 (@BUTT, @ROUND, @SQUARE)
+      */
     private val amplitudePaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
         color = context.getColor(R.color.purple_500)
         strokeWidth = LINE_WIDTH
         strokeCap = Paint.Cap.ROUND
     }
+
     private var drawingWidth: Int = 0
     private var drawingHeight: Int = 0
     private var drawingAmplitudes: List<Int> = emptyList()
     private var isReplaying: Boolean = false
     private var replayingPosition: Int = 0
 
+    /**
+     * isReplaying == true : replayingPosition에 해당되는 drawingAmplitude 크기만큼 선 그리기
+     * isReplaying == false : drawingAmplitude에 currentAmplitude 추가
+     */
     private val visualizeRepeatAction: Runnable = object : Runnable{
         override fun run() {
-            // Amplitude, Draw
             if(!isReplaying){
                 val currentAmplitude = onRequestCurrentAmplitude?.invoke() ?:0
                 drawingAmplitudes = listOf(currentAmplitude) + drawingAmplitudes
@@ -34,11 +46,17 @@ class SoundVisualizerView(
                 replayingPosition++
             }
             invalidate()
+            Log.d("msg","invalidate")
 
+            // 20ms 반복
             handler?.postDelayed(this, ACTION_INTERVAL)
         }
     }
 
+    /**
+     * 해당 View의 사이즈가 변하거나, 초기 생성될 때 호출
+     * w, h, oldw, oldh -> px 단위
+     */
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
         drawingWidth = w
@@ -62,6 +80,7 @@ class SoundVisualizerView(
                 }
             }
             .forEach {amplitude ->
+
             val lineLength = amplitude / MAX_AMPLITUE * drawingHeight * 0.8F
 
             offsetX -= LINE_SPACE

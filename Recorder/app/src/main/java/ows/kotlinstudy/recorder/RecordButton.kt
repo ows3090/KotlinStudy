@@ -5,6 +5,9 @@ import android.util.AttributeSet
 import android.util.Log
 import androidx.appcompat.widget.AppCompatImageButton
 
+/**
+ * 레코딩 상태에 따라 Image가 바뀌는 ImageButton
+ */
 class RecordButton(context: Context, attrs: AttributeSet) : AppCompatImageButton(context, attrs){
 
     init {

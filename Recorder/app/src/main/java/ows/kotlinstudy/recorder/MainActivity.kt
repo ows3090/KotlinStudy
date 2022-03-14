@@ -5,6 +5,7 @@ import android.media.MediaPlayer
 import android.media.MediaRecorder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.widget.Button
 import java.util.jar.Manifest
@@ -108,16 +109,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun startRecording(){
+        /**
+         * MediaRecorder 초기화
+         */
         recorder = MediaRecorder().apply {
-            setAudioSource(MediaRecorder.AudioSource.MIC)
-            setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP)
-            setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB)
-            setOutputFile(recordingFilePath)
-            prepare()
+            setAudioSource(MediaRecorder.AudioSource.MIC)       // 오디오 소스 설정, 대게 MIC(마이크)
+            setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP)       // 출력 포맷 설정, Android 8.0(API 26)부터는 스트리밍에 유용한 MPEG2_TS 포맷 지원
+            setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB)      // 오디오 인코더 설정
+            setOutputFile(recordingFilePath)        // 출력 파일 이름 설정
+            prepare()       // prepare를 호춯하여야 초기화 완료
         }
-
         recorder?.start()
-        soundVisualizerView.startVisualizing(false)
+
+        soundVisualizerView.startVisualizing(false) // Record O, Play X
         recordTimeTextView.startCountUp(true)
         state = State.ON_RECORDING
     }
@@ -135,6 +139,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun startPlaying(){
         if(player == null){
+            /**
+             * MediaPlayer 초기화
+             */
             player = MediaPlayer().apply {
                 setDataSource(recordingFilePath)
                 prepare()
