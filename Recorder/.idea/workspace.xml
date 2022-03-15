@@ -13,18 +13,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83dc7403-ee2e-448d-9174-9ab391947c07" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/recorder/CountUpView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/recorder/CountUpView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/recorder/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/recorder/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/recorder/RecordButton.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/recorder/RecordButton.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/recorder/SoundVisualizerView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/recorder/SoundVisualizerView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Timer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Timer/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="83dc7403-ee2e-448d-9174-9ab391947c07" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

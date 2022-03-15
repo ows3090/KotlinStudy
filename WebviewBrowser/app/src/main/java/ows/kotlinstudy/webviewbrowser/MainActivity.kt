@@ -72,6 +72,9 @@ class MainActivity : AppCompatActivity() {
     }
     
     private fun bindViews() {
+        /**
+         * IME_ACTION_DONE 클릭 시 WebView 로딩
+         */
         addressBar.setOnEditorActionListener { v, actionId, event ->
             if(actionId == EditorInfo.IME_ACTION_DONE){
                 val loadingUrl = v.text.toString()
@@ -101,6 +104,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * 웹페이지가 로딩될 때 생기는 콜백 메소드 구성
+     */
     inner class WebViewClient: android.webkit.WebViewClient() {
 
         override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
@@ -119,6 +125,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * 웹페이지 내에서 일어나는 액션 처리를 위한 콜백 메소드 구성
+     */
     inner class WebChromeClient: android.webkit.WebChromeClient() {
         override fun onProgressChanged(view: WebView?, newProgress: Int) {
             super.onProgressChanged(view, newProgress)

@@ -61,7 +61,8 @@
 
 1. ConstraintLayout
 2. EditText
-3. WebView
+3. WebView, WebViewClient, WebChromeClient
+4. SwipeRefreshLayout
 
 <br>
 
