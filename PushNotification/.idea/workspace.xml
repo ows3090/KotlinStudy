@@ -5,33 +5,29 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="msg" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cc0a9e86-12bc-4532-90bd-b959e26922ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../AirBnB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AirBnB/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Caculator/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Caculator/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Caculator/app/src/main/java/ows/kotlinstudy/caculator/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Caculator/app/src/main/java/ows/kotlinstudy/caculator/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Caculator/app/src/main/java/ows/kotlinstudy/caculator/model/History.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Caculator/app/src/main/java/ows/kotlinstudy/caculator/model/History.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ElectronicFrame/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ElectronicFrame/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ElectronicFrame/app/src/main/java/ows/kotlinstudy/electronicframe/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ElectronicFrame/app/src/main/java/ows/kotlinstudy/electronicframe/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LottoApp/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LottoApp/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LottoApp/app/src/main/java/ows/kotlinstudy/lottoapp/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../LottoApp/app/src/main/java/ows/kotlinstudy/lottoapp/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Recorder/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../Recorder/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Recorder/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Recorder/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Recorder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Recorder/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Recorder/app/src/main/java/ows/kotlinstudy/recorder/CountUpView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Recorder/app/src/main/java/ows/kotlinstudy/recorder/CountUpView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Timer/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../Timer/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Timer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Timer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebviewBrowser/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../WebviewBrowser/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebviewBrowser/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebviewBrowser/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/pushnotification/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/pushnotification/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/pushnotification/MyFirebaseMessagingServier.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/pushnotification/MyFirebaseMessagingServier.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[R5CRC3YW88M]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -54,8 +50,16 @@
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -65,7 +69,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="PushNotification.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -73,6 +77,7 @@
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -123,6 +128,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>

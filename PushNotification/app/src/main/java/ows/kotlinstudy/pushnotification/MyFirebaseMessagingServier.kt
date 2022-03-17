@@ -8,6 +8,7 @@ import android.app.PendingIntent.FLAG_UPDATE_CURRENT
 import android.content.Context
 import android.content.Intent
 import android.os.Build
+import android.util.Log
 import android.widget.RemoteViews
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
@@ -15,15 +16,28 @@ import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 
 class MyFirebaseMessagingServier : FirebaseMessagingService() {
+    /**
+     * 클라이언트 앱 인스턴스 용 Token 생성/변경 시 호출
+     * 1. 앱 처음 시작할 때
+     * 2. 새 기기에서 복원
+     * 3. 사용자가 앱 삭제/재설치
+     * 4. 사용자 앱 데이터 소거
+     */
     override fun onNewToken(p0: String) {
         super.onNewToken(p0)
     }
 
+    /**
+     * Firebase Messaging으로부터 메시지 수신 시 호출
+     * 알림 메시지 : notification, token 예약어 사용
+     * 데이터 메시지 : 사용자 설정
+     */
     override fun onMessageReceived(p0: RemoteMessage) {
         super.onMessageReceived(p0)
 
         createNotificationChannel()
 
+        // NORMAL, EXPANDABLE, CUSTOM
         val type = p0.data["type"]
             ?.let { NotificationType.valueOf(it) }
         val title = p0.data["title"]
@@ -40,10 +54,11 @@ class MyFirebaseMessagingServier : FirebaseMessagingService() {
             val channel = NotificationChannel(
                 CHANNEL_ID,
                 CHANNEL_NAME,
-                NotificationManager.IMPORTANCE_DEFAULT
+                NotificationManager.IMPORTANCE_DEFAULT      // 채널 중요도 설정
             )
             channel.description = CHANNEL_DESCRIPTION
 
+            // NotoficationManager를 통해 시스템에 Channel 등록
             (getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager).createNotificationChannel(
                 channel
             )
@@ -61,6 +76,10 @@ class MyFirebaseMessagingServier : FirebaseMessagingService() {
             addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
         }
 
+        /**
+         * 내가 직접 OS에 요청하는 intent가 아닌 향후에 실행될 작업을 요청하는 Intent
+         * 해당 Intent를 실행시켜줄 주체에게 전달 -> NotificationManager
+         */
         val pendingIntent = PendingIntent.getActivity(this, type.id, intent, FLAG_UPDATE_CURRENT)
 
         val notificationBuilder = NotificationCompat.Builder(this, CHANNEL_ID)

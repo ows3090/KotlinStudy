@@ -69,13 +69,7 @@
 ## Push Notification
 
 1. Firebase cloud messaging
-	- Token : Firebase creates a corresponding ID token that uniquely identifies them and grants them access to serveral resources.
-	- To receive messages, use a service that extends FirebaseMessagingService
-	- Notification Message : Only background state
-	- Data Message : All state, Client App 
 2. Notification 
-	- Notification Channel : SDK 26, Oreo over
-	- Normal, Expandable, Custom
 
 <br>
 
