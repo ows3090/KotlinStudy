@@ -76,10 +76,7 @@
 ## Today wise saying
 
 1. Firebase Remote Config
-	- FRC is a cloud service that lets you change the behavior and appearance of your app without requiring user 
-	to download an app update.
 2. ViewPager2
-	- ViewPager vs ViewPager2 : Vertical orientation support, RTL support, Modifiable Use notifyDatasetChanged, DiffUtil (like recyclerview)
 
 <br>
 

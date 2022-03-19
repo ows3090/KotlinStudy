@@ -31,10 +31,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initViews(){
+        /**
+         * 포커스된 페이지에서 변형될 때 호출되는 메소드
+         * -2 -1 0 1 2 : 0이 포커스된 페이지
+         */
         viewPager.setPageTransformer { page, position ->
             when{
                 position.absoluteValue >= 1F -> {
-                    page.alpha = 0F
+                    page.alpha = 1F
                 }
                 position == 0F -> {
                     page.alpha = 1F
@@ -50,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         val remoteConfig = Firebase.remoteConfig
         remoteConfig.setConfigSettingsAsync(
             remoteConfigSettings {
-                minimumFetchIntervalInSeconds = 0
+                minimumFetchIntervalInSeconds = 0       // 최소 Remote Config fecth 타밈, 상용은 기본값이 12시간 사용s
             }
         )
         remoteConfig.fetchAndActivate().addOnCompleteListener {
@@ -71,7 +75,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         viewPager.adapter = adapter
-        viewPager.setCurrentItem(adapter.itemCount/2, false)
+        viewPager.setCurrentItem(adapter.itemCount/2, false)    // 현재 포커스 아이템 설정
     }
 
     private fun parseQuotesJson(json : String) : List<Quote> {
