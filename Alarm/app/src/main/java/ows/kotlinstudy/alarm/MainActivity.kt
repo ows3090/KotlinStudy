@@ -12,6 +12,7 @@ import android.widget.TextView
 import android.widget.TimePicker
 import androidx.core.content.edit
 import java.util.*
+import java.util.concurrent.Executors
 
 class MainActivity : AppCompatActivity() {
 
@@ -52,6 +53,11 @@ class MainActivity : AppCompatActivity() {
                 val pendingIntent = PendingIntent.getBroadcast(this, ALARM_REQUEST_CODE,
                     intent, PendingIntent.FLAG_UPDATE_CURRENT)
 
+                /**
+                 * setRepating 대신 setInexaceRepeating 으로 개선
+                 * 동일한 알림 시기의 모든 인스턴스가 서버에 도달하면 서버 부담이 될 수 있다.
+                 * 너무 정밀하게 할 경우 서버 요청이 많아져서 서비스 거부 발생 가능성 증가
+                 */
                 alarmManager.setInexactRepeating(
                     AlarmManager.RTC_WAKEUP,
                     calendar.timeInMillis,

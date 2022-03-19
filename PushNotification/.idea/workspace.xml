@@ -14,14 +14,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc0a9e86-12bc-4532-90bd-b959e26922ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Alarm/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Alarm/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Alarm/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Alarm/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Alarm/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Alarm/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/owonseog/.android/avd/Nexus_5X_API_27.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[192.168.35.230:5555]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
