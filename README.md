@@ -83,12 +83,8 @@
 ## Alarm 
 
 1. AlarmManager
-	- This class provides access to the system alarm service.
-	- vs WorkManger (Delay task)
 2. Notification
 3. Broadcast receiver
-	- Android apps can send or receive broadcast messages from the Android system and other Android apps, 
-	smiliar to the publish-subscribe design pattern.
 
 <br>
 
