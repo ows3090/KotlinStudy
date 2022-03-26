@@ -1,5 +1,6 @@
 package ows.kotlinstudy.bookreview.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -17,7 +18,6 @@ class BookAdapter(private val itemClickedListener: (Book) -> Unit) : ListAdapter
         fun bind(bookModel: Book){
             binding.titleTextView.text = bookModel.title
             binding.descriptionTextView.text = bookModel.description
-
             binding.root.setOnClickListener {
                 itemClickedListener(bookModel)
             }
@@ -37,14 +37,15 @@ class BookAdapter(private val itemClickedListener: (Book) -> Unit) : ListAdapter
         holder.bind(currentList[position])
     }
 
+
     companion object {
         val diffUtil = object : DiffUtil.ItemCallback<Book>() {
             override fun areItemsTheSame(oldItem: Book, newItem: Book): Boolean {
-                return oldItem == newItem
+                return oldItem.id == newItem.id
             }
 
             override fun areContentsTheSame(oldItem: Book, newItem: Book): Boolean {
-                return oldItem.id == newItem.id
+                return oldItem == newItem
             }
         }
     }

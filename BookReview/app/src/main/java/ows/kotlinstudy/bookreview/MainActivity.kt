@@ -6,9 +6,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.KeyEvent
+import android.view.LayoutInflater
 import android.view.MotionEvent
+import android.view.inputmethod.InputMethodManager
 import androidx.core.view.isVisible
+import androidx.recyclerview.widget.AsyncListDiffer
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.ListAdapter
 import androidx.room.Room
 import ows.kotlinstudy.bookreview.adapter.BookAdapter
 import ows.kotlinstudy.bookreview.adapter.HistoryAdapter
@@ -29,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var adapter: BookAdapter
-    private lateinit var historyAdatper : HistoryAdapter
+    private lateinit var historyAdatper: HistoryAdapter
     private lateinit var bookService: BookService
 
     private lateinit var db: AppDatabase
@@ -75,17 +80,17 @@ class MainActivity : AppCompatActivity() {
             initSearchEditText()
     }
 
-    fun initBookRecyclerView(){
+    fun initBookRecyclerView() {
         adapter = BookAdapter(itemClickedListener = {
             val intent = Intent(this, DetailActivity::class.java)
-            intent.putExtra("bookModel",it)
+            intent.putExtra("bookModel", it)
             startActivity(intent)
         })
         binding.bookRecyclerView.layoutManager = LinearLayoutManager(this)
         binding.bookRecyclerView.adapter = adapter
     }
 
-    fun initHistoryRecyclerView(){
+    fun initHistoryRecyclerView() {
         historyAdatper = HistoryAdapter(historyDeleteClickedListener = {
             deleteSearchKeyword(it)
         })
@@ -93,7 +98,7 @@ class MainActivity : AppCompatActivity() {
         binding.historyRecyclerView.adapter = historyAdatper
     }
 
-    private fun search(keyword : String){
+    private fun search(keyword: String) {
         bookService.getBooksByName(getString(R.string.interparkAPIKey), keyword)
             .enqueue(object : Callback<SearchBookDto> {
                 override fun onResponse(
@@ -102,7 +107,7 @@ class MainActivity : AppCompatActivity() {
                 ) {
                     hideHistoryView()
                     saveSearchKeyword(keyword)
-                    if(response.isSuccessful.not()){
+                    if (response.isSuccessful.not()) {
                         return
                     }
                     adapter.submitList(response.body()?.books.orEmpty())
@@ -117,15 +122,16 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("ClickableViewAccessibility")
     private fun initSearchEditText() {
         binding.searchEditText.setOnKeyListener { v, keyCode, event ->
-            if(keyCode == KeyEvent.KEYCODE_ENTER && event.action == MotionEvent.ACTION_DOWN){
+            if (keyCode == KeyEvent.KEYCODE_ENTER && event.action == MotionEvent.ACTION_DOWN) {
                 search(binding.searchEditText.text.toString())
+                hideKeyboard()
                 return@setOnKeyListener true
             }
             return@setOnKeyListener false
         }
 
         binding.searchEditText.setOnTouchListener { v, event ->
-            if(event.action == MotionEvent.ACTION_DOWN){
+            if (event.action == MotionEvent.ACTION_DOWN) {
                 showHistoryView()
             }
             return@setOnTouchListener false
@@ -133,7 +139,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showHistoryView() {
-        Thread{
+        Thread {
             val keywords = db.historyDao().getAll().reversed()
 
             runOnUiThread {
@@ -155,14 +161,24 @@ class MainActivity : AppCompatActivity() {
         }.start()
     }
 
-    private fun deleteSearchKeyword(keyword: String){
+    private fun deleteSearchKeyword(keyword: String) {
         Thread {
             db.historyDao().delete(keyword)
             showHistoryView()
         }.start()
     }
 
-    companion object{
+    private fun hideKeyboard(){
+        /**
+         * window token : WindowManager가 사용하는 특별한 토큰, window 구별
+         * 허용되지 않은 window를 수정할 수 없기에 토큰별로 권한 부여
+         * flag : 항상 닫힘
+          */
+        val inputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+        inputMethodManager.hideSoftInputFromWindow(window.decorView.windowToken,0 )
+    }
+
+    companion object {
         private const val TAG = "MainActivity"
 
     }
