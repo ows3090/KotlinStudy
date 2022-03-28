@@ -23,6 +23,11 @@ import com.google.firebase.ktx.Firebase
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
+
+    /**
+     * Activity, Fragment의 onActivityResult 메소드로부터 Facebook SDK에 콜백 호출을 위한 Manager
+     * Pass the activity result back to the Facebook SDK
+     */
     private lateinit var callbackManager: CallbackManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,12 +44,14 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun initLoginButton() {
-        Log.d("msg","initLoginButton")
         val loginButton = findViewById<Button>(R.id.loginButton)
         loginButton.setOnClickListener {
             val email = getInputEmail()
             val password = getInputPassword()
 
+            /**
+             * Email, Password를 사용하여 로그인
+             */
             auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     handleSuccessLogin()
@@ -62,6 +69,11 @@ class LoginActivity : AppCompatActivity() {
             val email = getInputEmail()
             val password = getInputPassword()
 
+            /**
+             * Email과 Password의 유효성을 검사 후 사용자 생성
+             * createUserWithEmailAndPassword -> Task<AutoResult> 반환, AutoResult에 사용자에 대한 정보 존재
+             * addOnCompleListener : Task가 끝났을 때 호출되는 리스너, 비동기로 수행
+             */
             auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener { task ->
                 if(task.isSuccessful){
                     Toast.makeText(this, "회원가입에 성공했습니다. 로그인 버튼을 눌러 로그인해주세요.", Toast.LENGTH_LONG).show()
@@ -93,10 +105,19 @@ class LoginActivity : AppCompatActivity() {
 
     private fun initFacebookLoginButton(){
         val facebookLoginButton = findViewById<LoginButton>(R.id.facebookLoginButton)
-        facebookLoginButton.setPermissions("email","public_profile")
+
+        /**
+         * LoginButton : LoginManager에서 사용할 수 있는 기능에 대한 Wrapper UI 요소
+         */
+        facebookLoginButton.setPermissions("email","public_profile")    // email, public_profile 권한 부여
+
+        /**
+         * CallbackManager에 callback 등
+         */
         facebookLoginButton.registerCallback(callbackManager, object: FacebookCallback<LoginResult> {
             override fun onSuccess(result: LoginResult) {
-                // 로그인 성공
+                // 로그인 성공, result에 AccessToken 포함
+
                 val credential = FacebookAuthProvider.getCredential(result.accessToken.token)
                 auth.signInWithCredential(credential).addOnCompleteListener(this@LoginActivity) {task ->
                     if(task.isSuccessful){
@@ -133,6 +154,12 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this, "로그인에 실패했습니다.",Toast.LENGTH_LONG).show()
             return
         }
+
+        /**
+         * 데이터 업데이트 : setValue() or updateChildren
+         * setValue : 모든 데이터를 덮어 씌움
+         * updateChildren : 특정 DB에 동시에 업데이트 필요시 사용
+         */
         val userId = auth.currentUser?.uid.orEmpty()
         val currentUserDB = Firebase.database.reference.child("Users").child(userId)
         val user = mutableMapOf<String, Any>()
@@ -141,7 +168,4 @@ class LoginActivity : AppCompatActivity() {
 
         finish()
     }
-
-
-
 }

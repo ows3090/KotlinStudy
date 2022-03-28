@@ -101,13 +101,9 @@
 ## Tinder
 
 1. Firebase Authenetication, Email Login, Facebook Login
-	- createUserWithEmailAndPassword
-	- signInWithEmailAndPassword
-	- Facebook setPermission
 2. Firebase Realtime Database
-	- addListenerForSingleValueEvent
-	- addChildEventListner
 3. yuyakaido/CardStackView
+4. OAuth
 
 <br>
 

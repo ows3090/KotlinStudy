@@ -82,8 +82,12 @@ class LikeActivity : AppCompatActivity(), CardStackListener {
     }
 
     private fun getUnSelectedUsers() {
+        /**
+         * userDB에서 child의 추가,삭제,변경에 대한 리스너
+         */
         userDB.addChildEventListener(object : ChildEventListener {
             override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
+                Log.d("msg","onChildAdded ${getCurrentUserID()}")
                 if (snapshot.child(USER_ID).value != getCurrentUserID()
                     && snapshot.child(LIKED_BY).child(LIKE).hasChild(getCurrentUserID()).not()
                     && snapshot.child(LIKED_BY).child(DIS_LIKE).hasChild(getCurrentUserID()).not()

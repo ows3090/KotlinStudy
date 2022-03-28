@@ -1,5 +1,6 @@
 package ows.kotlinstudy.tinder
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,10 +31,12 @@ class CardItemAdapter: ListAdapter<CardItem, CardItemAdapter.ViewHolder>(diffUti
     companion object{
         val diffUtil = object: DiffUtil.ItemCallback<CardItem>(){
             override fun areItemsTheSame(oldItem: CardItem, newItem: CardItem): Boolean {
+                Log.d("msg","areItemsTheSame ${oldItem.userId == newItem.userId} ${oldItem === newItem}")
                 return oldItem.userId == newItem.userId
             }
 
             override fun areContentsTheSame(oldItem: CardItem, newItem: CardItem): Boolean {
+                Log.d("msg","areContentsTheSame")
                 return oldItem == newItem
             }
         }
