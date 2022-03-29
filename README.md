@@ -122,14 +122,9 @@
 ## Air BnB
 
 1. Naver Map API
-	- NaverMap, Marker, CameraUpdate..
 2. ViewPager2
 3. FrameLayout
-	- FrameLayout is designed to block out an area on the screnn to display a single item.
 4. CoordinatorLayout
-	- As a top-level application decor or chrome layout
-	- As a container for a specific intercation with one or more child views
-	- By specifying Behaviors for child views of a CoordinatorLayout you can provide many different interactions within a single parent and those views can also interact with one another.
 5. BottomSheetBehavior
 6. Retrofit
 7. Glide

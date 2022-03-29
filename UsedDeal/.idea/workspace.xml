@@ -13,13 +13,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b7be4a-f71c-4c3c-91b7-80e68057f076" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Tinder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tinder/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/useddeal/home/ArticleAddActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/useddeal/home/ArticleAddActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/useddeal/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ows/kotlinstudy/useddeal/home/HomeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="c4b7be4a-f71c-4c3c-91b7-80e68057f076" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

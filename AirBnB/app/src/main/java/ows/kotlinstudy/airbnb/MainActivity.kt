@@ -22,9 +22,16 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity(), OnMapReadyCallback, Overlay.OnClickListener {
-
+    /**
+     * 지도를 다루는 인터페이스 역할
+     */
     private lateinit var naverMap: NaverMap
     private lateinit var locationSource : FusedLocationSource
+
+    /**
+     * 지도를 나타내는 View 역할
+     * MapView는 MapView가 포함된 Activity의 라이프사이클에 맞춰야 함.
+     */
     private val mapView: MapView by lazy{
         findViewById(R.id.mapView)
     }
@@ -63,12 +70,18 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, Overlay.OnClickLis
         setContentView(R.layout.activity_main)
         mapView.onCreate(savedInstanceState)
 
+        /**
+         * mapView나 mapFragment에서 getMapAsync 메소드로 OnMapReadyCallback을 등록 시 NaverMap 객체 획득
+         */
         mapView.getMapAsync(this)
 
         viewPager.adapter = viewPagerAdapter
         recyclerview.adapter = recyclerAdapter
         recyclerview.layoutManager = LinearLayoutManager(this)
 
+        /**
+         * viewpager page 변경 시 호출되는 콜백 메소드
+         */
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
@@ -82,19 +95,33 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, Overlay.OnClickLis
         })
     }
 
+    /**
+     * NaverMap 객체가 준비되면 호출되는 콜백메소드
+     */
     override fun onMapReady(map: NaverMap) {
         naverMap = map
 
         naverMap.maxZoom = 18.0
         naverMap.minZoom = 10.0
 
+        /**
+         * Camera를 이동하기 위해서는 CameraUpdate 객체 사용
+         */
         val cameraUpdate = CameraUpdate.scrollTo(LatLng(37.497885, 127.027512))
         naverMap.moveCamera(cameraUpdate)
 
+        /**
+         * UISettings를 사용하여 사용자가 지도의 상호작용는 방법을 제어하고, UI 설정 관리
+         */
         val uiSetting = naverMap.uiSettings
-        uiSetting.isLocationButtonEnabled = false
+        uiSetting.isLocationButtonEnabled = false      // 현재 위치 표시
         currentLocationButton.map = naverMap
 
+        /**
+         * 최적화 위치를 제공해주는 FusedLocationSource
+         * 런타임 권한 처리를 위해 Activity, Fragment가 필요하여 전달
+         * 생성 시에 권한 요청
+         */
         locationSource = FusedLocationSource(this@MainActivity, LOCATION_PERMISSION_REQUEST_CODE)
         naverMap.locationSource = locationSource
 
@@ -143,6 +170,10 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, Overlay.OnClickLis
         }
     }
 
+    /**
+     * 오버레이(시각적 요소, marker) 클릭 이벤트 리스너
+     *
+     */
     override fun onClick(overlay: Overlay): Boolean {
         val selectedModel = viewPagerAdapter.currentList.firstOrNull {
             it.id == overlay.tag
