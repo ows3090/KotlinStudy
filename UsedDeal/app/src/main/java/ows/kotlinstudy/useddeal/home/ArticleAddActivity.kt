@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import com.google.firebase.auth.FirebaseAuth
@@ -79,7 +80,7 @@ class ArticleAddActivity : AppCompatActivity() {
             }
         }
     }
-
+d
     private fun uploadPhoto(uri: Uri, successHandler: (String) -> Unit, errorHandler: () -> Unit){
         val fileName = "${System.currentTimeMillis()}.png"
         Log.d("msg","first uri : $uri")
@@ -90,7 +91,6 @@ class ArticleAddActivity : AppCompatActivity() {
                     storage.reference.child("article/photo").child(fileName)
                         .downloadUrl
                         .addOnSuccessListener {
-
                             successHandler(it.toString())
                         }.addOnFailureListener {
                             errorHandler()
@@ -128,6 +128,9 @@ class ArticleAddActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * SAF로 DocumentProvider에 쉽게 접근 가능
+     */
     private fun startContentProvider(){
         val intent = Intent(Intent.ACTION_GET_CONTENT)
         intent.type = "image/*"
@@ -151,7 +154,7 @@ class ArticleAddActivity : AppCompatActivity() {
 
         when(requestCode){
             2020 -> {
-                val uri = data?.data
+                val uri = data?.data    // content:// 로 시작
                 if(uri != null){
                     findViewById<ImageView>(R.id.photoImageView).setImageURI(uri)
                     selectedUri = uri

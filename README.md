@@ -111,13 +111,9 @@
 
 1. RecyclerView
 2. View Binding
-	- View Binding vs Data Binding : No <layout> xml, fast compile (not annotation process), use to reference views directly
 3. Fragment
-	- SupportFragmentManager : beginTransAction -> replace or add
 4. BottomNavigationView
-	- setOnNavigationItemSelectedListener
 5. Firebase Storage
-	- putfile, downloadUrl
 6. Firebase Realtime Database
 7. Firebase Authentication
 

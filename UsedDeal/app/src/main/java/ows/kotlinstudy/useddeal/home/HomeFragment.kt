@@ -21,6 +21,9 @@ import ows.kotlinstudy.useddeal.R
 import ows.kotlinstudy.useddeal.chatlist.ChatListItem
 import ows.kotlinstudy.useddeal.databinding.FragmentHomeBinding
 
+/**
+ * Fragment(resid) : onCreateView에서 인플레이션
+ */
 class HomeFragment: Fragment(R.layout.fragment_home) {
 
     private lateinit var articleDB: DatabaseReference
